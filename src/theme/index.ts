@@ -9,8 +9,8 @@ const theme = extendTheme({
         minHeight: "100vh",
       },
       "form": {
-        minHeight: "100vh",
-        minWidth: "100vh",
+        minHeight: "100%",
+        minWidth: "100%",
       }
     },
   },
