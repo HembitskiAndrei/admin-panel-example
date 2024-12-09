@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 
-interface TokenContextType {
+export type TokenContextType = {
     token: string | null,
     setToken: (newToken: string) => void
 }

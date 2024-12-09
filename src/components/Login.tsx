@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import {
     FormErrorMessage, 
     FormControl,
@@ -50,7 +50,7 @@ const Login = () => {
         <form>
             <Box>
                 <AbsoluteCenter axis="both">
-                    <VStack>                 
+                    <VStack>
                         <Heading color="gray" as="h3" size="md" padding={4}>Sign In</Heading>
                         <FormControl 
                             isInvalid={!!errors?.email?.message}
