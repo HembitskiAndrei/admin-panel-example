@@ -1,12 +1,7 @@
+import type { TProtectedRouteProps } from "../types";
 import { Outlet, Navigate } from "react-router-dom";
 
-interface IProtectedRouteProps {
-    auth: {
-        isAuthenticated: boolean
-    };    
-}
-
-const ProtectedRoute = ({ auth: { isAuthenticated } }: IProtectedRouteProps) => {
+const ProtectedRoute = ({ auth: { isAuthenticated } }: TProtectedRouteProps) => {
     return isAuthenticated ? <Outlet /> : <Navigate to="/login" />;
 };
 
